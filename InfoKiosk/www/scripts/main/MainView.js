@@ -19,68 +19,73 @@ ik.main.MainView = treelad.Class.create({
 
     var navigator = $_element({
       $_tag: "div",
-      class: "container",
-      style: "background-color: #FFF176",
+      class: "fill",
       $_append: [{
-        $_tag: "br"
-      }, {
-        $_tag: "ul",
-        class: "nav nav-pills nav-justified",
-        $_append: [{
-          $_tag: "li",
-          class: "nav-item",
-          $_append: [{
-            $_tag: "a",
-            class: "nav-link",
-            $_append: "IT",
-            $_on: {
-              "click": function(e) {
-                e.preventDefault();
-                $(this).tab('show');
-                t.choosenCategory = "it";
-                t.openJobOfferView();
-              }
-            }
-          }]
-        }, {
-          $_tag: "li",
-          class: "nav-item",
-          $_append: [{
-            $_tag: "a",
-            class: "nav-link",
-            $_append: "Ochrona",
-            $_on: {
-              "click": function(e) {
-                e.preventDefault();
-                $(this).tab('show');
-                t.choosenCategory = "ochrona";
-                t.openJobOfferView();
-              }
-            }
-          }]
-        }, {
-          $_tag: "li",
-          class: "nav-item",
-          $_append: [{
-            $_tag: "a",
-            class: "nav-link",
-            $_append: "Produkcja",
-            $_on: {
-              "click": function(e) {
-                e.preventDefault();
-                $(this).tab('show');
-                t.choosenCategory = "produkcja";
-                t.openJobOfferView();
-              }
-            }
-          }]
-        }]
-      }, {
-        $_tag: "br"
-      }, {
         $_tag: "div",
-        id: "offerContainer",
+        class: "container",
+        style: "background-color: #FFF176",
+        $_append: [{
+          $_tag: "br"
+        }, {
+          $_tag: "ul",
+          class: "nav nav-pills nav-justified",
+          $_append: [{
+            $_tag: "li",
+            class: "nav-item",
+            $_append: [{
+              $_tag: "a",
+              class: "nav-link",
+              $_append: "IT",
+              $_on: {
+                "click": function(e) {
+                  e.preventDefault();
+                  $(this).tab('show');
+                  t.choosenCategory = "it";
+                  t.openJobOfferView();
+                }
+              }
+            }]
+          }, {
+            $_tag: "li",
+            class: "nav-item",
+            $_append: [{
+              $_tag: "a",
+              class: "nav-link",
+              $_append: "Ochrona",
+              $_on: {
+                "click": function(e) {
+                  e.preventDefault();
+                  $(this).tab('show');
+                  t.choosenCategory = "ochrona";
+                  t.openJobOfferView();
+                }
+              }
+            }]
+          }, {
+            $_tag: "li",
+            class: "nav-item",
+            $_append: [{
+              $_tag: "a",
+              class: "nav-link",
+              $_append: "Produkcja",
+              $_on: {
+                "click": function(e) {
+                  e.preventDefault();
+                  $(this).tab('show');
+                  t.choosenCategory = "produkcja";
+                  t.openJobOfferView();
+                }
+              }
+            }]
+          }]
+        }, {
+          $_tag: "br"
+        }, {
+          $_tag: "div",
+          id: "offerContainer",
+        }]
       }]
+
     });
     t.inside.insert(navigator);
 
