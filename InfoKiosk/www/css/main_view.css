@@ -1,0 +1,35 @@
+body, html {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.fill {
+  background: url(../images/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.7);
+}
+
+.fill_product {
+  background: url(../images/product_background.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(237,79,68,.87);
+}
+
+.text_line {
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+
+.text_line:before, .text_line:after{
+  content: "";
+  flex: 1 1;
+  border-bottom: 2px solid rgba(255,255,255,.3);
+  margin: auto;
+}
